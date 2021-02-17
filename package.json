@@ -1,0 +1,20 @@
+{
+    "name": "azure-infra-builder",
+    "version": "0.0.1",
+    "scripts": {
+        "puff": "puff",
+        "puffin": "puff -d",
+        "minify-json": "minify-json",
+        "test": "npm run puff && jest",
+        "go": "npm run puff && jest && npm run puffin"
+    },
+    "dependencies": {
+        "@foodx/puff": "^2.1.11",
+        "jest-cli": "^26.6.3",
+        "jest-trx-results-processor": "^2.2.0",
+        "minify-json": "^1.0.0"
+    },
+    "jest": {
+        "verbose": true
+    }
+}
