@@ -3,8 +3,7 @@ USER root
 
 WORKDIR /src
 
-COPY package.json .
-COPY package-lock.json .
+COPY package*.json ./
 
 RUN umask 000 \
     && npm ci --no-optional --unsafe-perm \
