@@ -1,7 +1,7 @@
 FROM node:14.15.5-buster-slim
 USER root
 
-WORKDIR /src
+WORKDIR /home/vsts_azpcontainer
 
 COPY package*.json ./
 
